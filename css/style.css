@@ -1,0 +1,301 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    outline: none;
+    border: none;
+}
+body{
+    background: #000000;
+    color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+/* Header First */
+header {
+    background: #212529;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: inherit;
+    /* color: #f8f9fa; */
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: box-shadow 0.2s ease-in;
+    min-height: 8vh;
+} 
+
+header.active {
+    box-shadow: 0 0 5px;
+    background: #9c36b5;
+}
+/* logo */
+.logo span {
+    border-radius: 40%;
+    background: #9c36b5;
+    padding: .3rem;
+}
+/* The hamburger Menu */
+#hamburger-menu {
+    height: 100px;
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    z-index: 1001;
+}
+.nav-bar.active {
+    display: block;
+} 
+
+/* navigation links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 60%;
+    min-height: 100vh;
+    z-index: 1000;
+    padding-top:  70px;
+    padding-left: 2rem;
+    background: #495057;
+    box-shadow: 0 0 4px;
+    display: none;
+    font-size: 1.3rem;
+}
+.nav-links.active {
+    display: block;
+} 
+.nav-links li {
+    padding: 0.8rem .2rem;
+}
+.nav-links li a {
+    position: relative;  
+}
+.nav-links li a::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #f03e3e;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s ease-in;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+    transition: 0.3s ease-out;
+}
+
+/* The hero page */
+
+.hide {
+    display: none;
+}
+main {
+    margin-top: 80px;
+}
+.hero-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 2;
+}
+
+.hero-title {
+    padding: 1rem 1.5rem;
+    border: 2px solid #9c36b5;
+    color: #9c36b5;
+    font-size: larger;
+    border-radius: 12px;
+}
+.hero-text {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: 4rem 0;
+}
+.btn {
+    padding: .8rem 1.2rem;
+    border: 2px solid #fff;
+    background: inherit;
+    color: #fff;
+    border-radius: 12px;
+}
+
+/* services */
+.services {
+    padding: .9rem;
+background: #495057;
+}
+.service-title {
+    padding: 1rem 0;
+}
+.grid-container {
+    display: grid;
+    grid-column: 1fr;
+    line-height: 1.6;
+    gap: 2rem;
+}
+.serv {
+    color: #9c36b5;
+    padding-bottom: 1rem;
+}
+.about {
+    min-height: 100vh;
+   padding: 4rem 1rem;
+   line-height: 1.3;
+
+}
+.about-text {
+    padding: 1rem 0;
+}
+/* skills */
+fieldset {
+    border: none;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+input {
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+    margin-top: .8rem;
+}
+label {
+    display: flex;
+    justify-content: space-between;
+}
+/* Filled portion (progress) */
+input[type="range"]::-moz-progress-bar{
+    background: #4caf50;
+}
+input[type="range"]::-ms-fill{
+    background: black;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    background: #4caf50;
+}
+/* input[type="range"]::-moz-range-progress {
+    background: #4caf50;
+  } */
+  
+  /* input[type="range"]::-ms-fill-lower {
+    background: #4caf50;
+  } */
+
+
+
+/* input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling */
+    /* width: 100%; Adjust as needed */
+    /* height: 10px; */
+    /* background: #9c36b5; Track color */
+    /* border-radius: 5px; Rounded edges */
+    /* outline: none; Remove outline */
+  /* } */
+  
+  /* input[type="range"]::-webkit-slider-runnable-track { */
+    /* background: #9c36b5; Gradient track */
+    /* color: #ddd; */
+    /* height: 10px; */
+    /* border-radius: 5px; */
+  /* } */
+  
+  /* input[type="range"]::-moz-range-track { */
+    /* background: linear-gradient(to right, #4caf50, #ddd); */
+    /* height: 10px; */
+    /* border-radius: 5px; */
+  /* } */
+  
+  /* input[type="range"]::-ms-track { */
+    /* background: linear-gradient(to right, #4caf50, #ddd); */
+    /* height: 10px; */
+    /* border-radius: 5px; */
+  /* } */
+  
+  /* Remove the circle (thumb) in Chrome, Edge, Safari */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove the thumb */
+    appearance: none;
+    /* width: 0; */
+    height: 0;
+    background: transparent;
+    cursor: default; /* Optional: Prevent pointer indication */
+  }
+  
+  /* Remove the circle (thumb) in Firefox */
+  input[type="range"]::-moz-range-thumb {
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: none;
+  }
+  
+  /* Remove the circle (thumb) in Internet Explorer */
+  input[type="range"]::-ms-thumb {
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: none;
+  }
+  
+  /* projects */
+  .grid-col img {
+    height: 350px;
+    width: 100%;
+  }
+/* form */
+form {
+    margin: 4rem 0;
+}
+input[type="text"],
+input[type="email"] {
+    padding: 1rem;
+    border: 1px solid #9c36b5;
+}
+input[type="text"]:hover,
+input[type="email"]:hover{
+    box-shadow: 0 0 5px;
+} 
+textarea {
+    width: 100%;
+    height: 100px;
+}
+  /* footer */
+  footer {
+    background: #9c36b5;
+    min-height: 5vh;
+    padding: .8rem;
+    text-align: center;
+  }

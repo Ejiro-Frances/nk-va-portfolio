@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nkechi Stella Onyeama Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://kit.fontawesome.com/d6b22e1d66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="home">
+        <div class="logo" aria-roledescription="Logo">
+            <span>N</span>KECHI
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services"></a>Services</li>
+                <li><a href="#skills"></a>Skills</li>
+                <li><a href="#projects"></a>Projects</li>
+                <li><a href="#contact"></a>Contact</li>
+
+            </ul>
+        </nav>
+        <div id="hamburger-menu">
+            <i id="mobile-icon" class="fa-solid fa-bars fa-lg"></i>
+        </div>
+    </header>
+
+    <main>
+       <section class="hero-page">
+        <h1 class="hero-title">NKECHI</h1>
+        <P class="hero-text">Virtual Assistant</P>
+        <button class="btn"> Hire Me</button>
+       </section>
+
+       <section class="services" id="services">
+            <h2 class="service-title">WHAT I DO</h2>
+            
+            <div class="grid-container">
+                <section class="grid-col">
+                    <div>
+                        <i class="fa-solid fa-bars-progress fa-2x serv"></i>
+                    </div>
+                    <div>
+                        <h3>Project Management</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aliquid, cum ex magni illo officia saepe delectus sit nemo totam deleniti temporibus voluptatem</p>
+                    </div>
+                </section>
+
+                <section class="grid-col">
+                  <div>
+                    <i class="fa fa-laptop fa-2x serv"></i>
+                  </div>
+                    <div>
+                        <h3> Task and Responsibilities</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aliquid, cum ex magni illo officia saepe delectus sit nemo totam deleniti temporibus voluptatem</p>
+                    </div>
+                </section>
+
+                <section class="grid-col">
+                    <div>
+                        <i class="fa fa-paper-plane fa-2x serv"></i>
+
+                    </div>
+                    <div>
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aliquid, cum ex magni illo officia saepe delectus sit nemo totam deleniti temporibus voluptatem</p>
+                </div>
+                </section>
+            </div>
+       </section>
+
+       <!-- about -->
+        <section id="about" class="about">
+            <h2 class="about-title">ABOUT NKECHI</h2>
+            <h3 class="about-text">VIRTUAL ASSISTANT, PROJECT MANAGER, CUSTOMER SUPPORT AGENT</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nam et velit quos suscipit eaque sit blanditiis neque alias veritatis? Est unde commodi dicta totam excepturi ipsum ab odit rerum!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptate nesciunt enim reprehenderit earum, sit ea sed quos! Numquam harum laboriosam dignissimos fuga totam tempora animi non laborum suscipit sequi.</p>
+
+        </section>
+        <section class="skills" id="skills">
+            <fieldset>
+                <label for="prob-sol">PROBLEM SOLVING <span>90%</span></label>
+                <input type="range" name="problem-solving" id="prob-sol" min="0" max="100" value="90"></fieldset>
+
+            <fieldset>
+                <label for="time-man">Time Management<span>95%</span></label><input type="range" name="time-man" id="time-man" min="0" max="100" value="95">
+            </fieldset>
+
+            <fieldset>
+                <label for="eff">Efficiency <span>92%</span></label><input type="range" name="efficiency" id="eff" min="0" max="100" value="92">
+            </fieldset>
+
+            <fieldset>
+                <label for="comm">Communication <span>90%</span></label>
+                <input type="range" name="communication" id="comm" min="0" max="100" value="90">
+            </fieldset>
+
+            <fieldset>
+                <label for="goog-work">Google WorkSpace <span >86%</span></label>
+                <input type="range" name="googgle-work" id="goog-work" min="0" max="100" value="86"></fieldset>
+
+        </section>
+
+        <!-- portfolio -->
+         <section class="services projects" id="projects">
+            <h2 class="service-title">My Projects</h2>
+            <div class="grid-container">
+                <article class="grid-col"><img src="./assets/images/Inbox Screenshot.png" alt=""></article>
+                <article class="grid-col"><img src="./assets/images/Inbox Screenshot.png" alt=""></article>
+                <article class="grid-col"><img src="./assets/images/Inbox Screenshot.png" alt=""></article>
+            </div>
+         </section>
+
+         <form class="contact" id="contact" novalidate>
+            <fieldset>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user-name" aria-required="true">
+                <span aria-errormessage="full name required"></span>
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="user-email" aria-required="true">
+                <span aria-errormessage="email required"></span>
+            </fieldset>
+
+            <fieldset>
+                <label for="user-message">Your Message</label>
+                <textarea name="user-message" id="user-message"></textarea>
+            </fieldset>
+            <button class="btn" type="submit">SEND MESSAGE</button>
+            </form>
+    </main>
+
+    <footer>Copyright &copy; 2024 Nkechi Onyeama 
+        <br>Developed by <a href="https://x.com/france_ssa">Ejiro Frances</a></footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
