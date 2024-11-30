@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+
 *,
 *::before,
 *::after {
@@ -21,17 +25,23 @@ a {
 button{
     outline: none;
     border: none;
+    cursor: pointer;
+}
+img {
+    display: block;
 }
 body{
-    background: #000000;
+    background: #181717;
     color: #f8f9fa;
+    font-family: "Karla", Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    
 }
 
 /* Header First */
 header {
     background: #212529;
-    padding: 0.5rem 2rem;
+    padding: 0.4rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,34 +51,31 @@ header {
     left: 0;
     width: 100%;
     background: inherit;
-    /* color: #f8f9fa; */
     font-weight: 600;
     text-transform: uppercase;
     transition: box-shadow 0.2s ease-in;
-    min-height: 8vh;
+    /* min-height: 8vh; */
 } 
 
 header.active {
-    box-shadow: 0 0 5px;
+    box-shadow: 0 0 5px #9c36b5;
     background: #9c36b5;
 }
+
 /* logo */
-.logo span {
-    border-radius: 40%;
-    background: #9c36b5;
-    padding: .3rem;
+.logo img {
+   height: 50px;
+  border-radius: 35%;
 }
 /* The hamburger Menu */
 #hamburger-menu {
     height: 100px;
-    position: fixed;
+    position: relative;
     top: 20px;
     right: 15px;
     z-index: 1001;
 }
-.nav-bar.active {
-    display: block;
-} 
+
 
 /* navigation links */
 .nav-links {
@@ -94,11 +101,13 @@ header.active {
 .nav-links.active {
     display: block;
 } 
+
 .nav-links li {
     padding: 0.8rem .2rem;
 }
 .nav-links li a {
-    position: relative;  
+    position: relative; 
+    letter-spacing: .15rem; 
 }
 .nav-links li a::after {
     position: absolute;
@@ -136,8 +145,9 @@ main {
     padding: 1rem 1.5rem;
     border: 2px solid #9c36b5;
     color: #9c36b5;
-    font-size: larger;
+    font-size: 2rem;
     border-radius: 12px;
+    box-shadow: 1px 1px 5px;
 }
 .hero-text {
     text-transform: uppercase;
@@ -151,12 +161,41 @@ main {
     color: #fff;
     border-radius: 12px;
 }
+.btn:hover {
+    background: #9c36b5;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px;
+} 
 
 /* services */
 .services {
-    padding: .9rem;
-background: #495057;
+    padding: 4rem .9rem;
+background: #2c2d2e;
 }
+.services h3 {
+    text-transform: uppercase;
+    font-size: larger;
+    padding: 1.2rem 0;
+}
+.slant-circle {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    border: 2px solid #f8f9fa;
+    margin-bottom: 2rem;
+    border-radius: 50%; /* Makes it a circle */
+    transform: rotate(-15deg); /* Slants the circle */
+  }
+  
+  .slant-circle h2 {
+    transform: rotate(15deg); /* Adjusts text to be upright */
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    font-family:  "Bokor", system-ui;
+    color: #f03e3e;
+  }
+  
 .service-title {
     padding: 1rem 0;
 }
@@ -170,109 +209,72 @@ background: #495057;
     color: #9c36b5;
     padding-bottom: 1rem;
 }
+/* about */
 .about {
     min-height: 100vh;
    padding: 4rem 1rem;
    line-height: 1.3;
-
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   flex-direction: column;
+   gap: 1rem;
 }
+.about-img img {
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+}
+
 .about-text {
     padding: 1rem 0;
+    color: #9c36b5;
+    font-size: 1.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .about p {
-    padding: 1.5rem 0;
+    padding: .5rem 0;
+}
+.abt-btn {
+    margin: 1.3rem 0;
+    border: 2px solid #f03e3e
 }
 /* skills */
+.skills {
+    margin-bottom: 4rem;
+}
 fieldset {
     border: none;
     margin: 1rem;
     text-transform: uppercase;
 }
-input {
+input[type="range"] {
     outline: none;
     border: none;
     display: block;
     width: 100%;
     margin-top: .8rem;
+    border-radius: 20px;
+    height: 10px;
+    accent-color: #9c36b5;
+    pointer-events: none;
 }
+
 label {
     display: flex;
     justify-content: space-between;
-}
-/* Filled portion (progress) */
-input[type="range"]::-moz-progress-bar{
-    background: #4caf50;
-}
-input[type="range"]::-ms-fill{
-    background: black;
-}
-input[type="range"]::-webkit-slider-runnable-track{
-    background: #4caf50;
-}
-/* input[type="range"]::-moz-range-progress {
-    background: #4caf50;
-  } */
+    margin-bottom: 5px;
+    margin-left: 20px;
+ }
   
-  /* input[type="range"]::-ms-fill-lower {
-    background: #4caf50;
-  } */
-
-
-
-/* input[type="range"] {
-    -webkit-appearance: none; /* Remove default styling */
-    /* width: 100%; Adjust as needed */
-    /* height: 10px; */
-    /* background: #9c36b5; Track color */
-    /* border-radius: 5px; Rounded edges */
-    /* outline: none; Remove outline */
-  /* } */
-  
-  /* input[type="range"]::-webkit-slider-runnable-track { */
-    /* background: #9c36b5; Gradient track */
-    /* color: #ddd; */
-    /* height: 10px; */
-    /* border-radius: 5px; */
-  /* } */
-  
-  /* input[type="range"]::-moz-range-track { */
-    /* background: linear-gradient(to right, #4caf50, #ddd); */
-    /* height: 10px; */
-    /* border-radius: 5px; */
-  /* } */
-  
-  /* input[type="range"]::-ms-track { */
-    /* background: linear-gradient(to right, #4caf50, #ddd); */
-    /* height: 10px; */
-    /* border-radius: 5px; */
-  /* } */
-  
-  /* Remove the circle (thumb) in Chrome, Edge, Safari */
   input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Remove the thumb */
-    appearance: none;
-    /* width: 0; */
-    height: 0;
-    background: transparent;
-    cursor: default; /* Optional: Prevent pointer indication */
+    opacity: 0;
   }
-  
-  /* Remove the circle (thumb) in Firefox */
-  input[type="range"]::-moz-range-thumb {
-    width: 0;
-    height: 0;
-    background: transparent;
-    border: none;
+  input[type="range"]::-webkit-progress-inner-element{
+    background-color: #9c36b5;
   }
-  
-  /* Remove the circle (thumb) in Internet Explorer */
-  input[type="range"]::-ms-thumb {
-    width: 0;
-    height: 0;
-    background: transparent;
-    border: none;
-  }
-  
+
+ 
   /* projects */
   .grid-col img {
     height: 350px;
@@ -282,10 +284,16 @@ input[type="range"]::-webkit-slider-runnable-track{
 form {
     margin: 4rem 0;
 }
+form button {
+    margin-left: 30px;
+}
 input[type="text"],
 input[type="email"] {
     padding: 1rem;
     border: 1px solid #9c36b5;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
 }
 input[type="text"]:hover,
 input[type="email"]:hover{
@@ -294,6 +302,81 @@ input[type="email"]:hover{
 textarea {
     width: 100%;
     height: 100px;
+    border-radius: 20px;
+    outline: none;
+    padding: 1rem;
+}
+.contact {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.socials {
+    padding: 1.5rem;
+    background: #9c36b5;
+    border-radius: 25px;
+    min-height: 20vh;
+}
+ .socials span {
+    font-size: 1.3rem;
+    margin-left: 5px;
+ }
+ .socials address {
+    margin: 1rem 0;
+ }
+
+address a:hover {
+    color: #020202;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+  /* CSS for the modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    overflow: auto;
+    /* background-color:#9c36b5 */
+  }
+  
+  .modal-content {
+    background-color: #9c36b5;
+    border-radius: 10px;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  summary {
+    background: #9c36b5;
+    color: #fff;
+    padding: .4rem;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
 }
   /* footer */
   footer {

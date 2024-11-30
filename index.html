@@ -10,21 +10,19 @@
 </head>
 <body>
     <header id="home">
-        <div class="logo" aria-roledescription="Logo">
-            <span>N</span>KECHI
+        <div class="logo">
+            <img src="./assets/images/IMG-20241129-WA0092.jpg" alt="Logo showing the letters NK">
         </div>
-
         <nav>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services"></a>Services</li>
-                <li><a href="#skills"></a>Skills</li>
-                <li><a href="#projects"></a>Projects</li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="https://docs.google.com/document/d/17Ef1x_pPuVI8xGVTopqLHQdsZTruPbzZYk1gCiz3y_w/edit" target="_blank">Resume</a></li>
                 <li class="btn"><a href="#Get in Touch"></a>Contact</li>
                
-
             </ul>
         </nav>
         <div id="hamburger-menu">
@@ -40,7 +38,9 @@
        </section>
 
        <section class="services" id="services">
-            <h2 class="service-title">WHAT I DO</h2>
+            <div class="slant-circle">
+                <h2 class="service-title">Services Offered</h2>
+            </div>
             
             <div class="grid-container">
                 <section class="grid-col">
@@ -49,7 +49,7 @@
                     </div>
                     <div>
                         <h3>Project Management</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aliquid, cum ex magni illo officia saepe delectus sit nemo totam deleniti temporibus voluptatem</p>
+                        <p>I am here to help you stay organized and ensure that your projects run smoothly from start to finish. I can create detailed project plans, assign tasks, and track progress using tools like Trello or Asana. I also handle communication between team members, prepare progress updates, and manage schedules to keep everything on track. Whether it’s coordinating resources, identifying potential risks, or streamlining workflows, I’m here to take the stress off your plate and help your project succeed.</p>
                     </div>
                 </section>
 
@@ -58,19 +58,18 @@
                     <i class="fa fa-laptop fa-2x serv"></i>
                   </div>
                     <div>
-                        <h3> Task and Responsibilities</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aliquid, cum ex magni illo officia saepe delectus sit nemo totam deleniti temporibus voluptatem</p>
+                        <h3> Administrative Support</h3>
+                        <p> I help clients stay organized and focused on what matters most. I can manage your calendar, schedule appointments, handle emails, and keep your documents and files in order. Whether it’s coordinating meetings, preparing reports, or taking care of day-to-day tasks, I make sure everything runs smoothly behind the scenes. My goal is to save you time and help you work more efficiently, so you can focus on growing your business.</p>
                     </div>
                 </section>
 
                 <section class="grid-col">
                     <div>
                         <i class="fa fa-paper-plane fa-2x serv"></i>
-
                     </div>
                     <div>
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aliquid, cum ex magni illo officia saepe delectus sit nemo totam deleniti temporibus voluptatem</p>
+                    <h3>Data and Research</h3>
+                    <p>As a virtual assistant specializing in data and research, I help clients find and organize the information they need to make informed decisions. Whether it’s conducting market research, gathering data, creating detailed reports, or analyzing trends, I ensure the information is accurate and actionable. I take the time to dig deep, sort through the noise, and present insights in a clear and organized way, saving you time and effort while helping you stay ahead.</p>
                 </div>
                 </section>
             </div>
@@ -78,12 +77,20 @@
 
        <!-- about -->
         <section id="about" class="about">
-            <h2 class="about-title">ABOUT NKECHI</h2>
+            <article class="about-img">
+                <img src="./assets/images/WhatsApp Image 2024-11-29 at 18.07.22_ec7a4d0c.jpg" alt="">
+            </article>
+            <article class="about-text-container">
+           <div class="slant-circle">
+            <h2 class="about-title">Who is Nkechi</h2>
+           </div>
+           
             <h3 class="about-text">VIRTUAL ASSISTANT, PROJECT MANAGER, CUSTOMER SUPPORT AGENT</h3>
-            <p>"Hello, I am Onyeama Nkechi, a Virtual Assistant, Project Manager and Customer Support Agent with a passion for delivering top notch services and managing up projects.</p>
+
+            <p>Hello, I am Nkechi Onyeama, a Virtual Assistant, Project Manager and Customer Support Agent with a passion for delivering top notch services and managing projects.</p>
             <p>
-                As one who has been drawn to understanding the complexity of human actions, I've always been driven by getting the best out of situations and situating a pivotal point for superb goals realization. <br>
-                With 2+ years of experience in customer orientation and psyche coupled with project management tools, I have developed a unique blend of skills and expertise that enable me to communicate, interpret and mediate actions for a set aside goals.
+                As one who has been drawn to understanding the complexity of human actions, I have always been driven by getting the best out of situations and situating a pivotal point for superb goals realization. <br>
+                With 2+ years of experience in customer orientation and psyche coupled with project management tools, I have developed a unique blend of skills and expertise that enable me to communicate, interpret and mediate actions for set aside goals.
             </p>
             <p>
                 My mission is to efficiently be a strategic streamliner while incorporating the values and ideal of supposed entities. I am dedicated to making the stage and limelight bigger on you while tirelessly making the song and choreography easier and fun to dance to through getting to know your preferences and making your weaknesses strength to the audience; making them sit at the edges of their seat and grasping for more!
@@ -102,9 +109,10 @@
                 
                 I'm looking forward to collaborating with you and helping you achieve your goals.</p>
 
-                <button type="button" class="btn"><a href="#contact">  Get in Touch</a></button>
-
+                <button type="button" class=" abt-btn btn"><a href="#contact">  Get in Touch</a></button>
+            </article>
         </section>
+
         <section class="skills" id="skills">
             <fieldset>
                 <label for="prob-sol">PROBLEM SOLVING <span>90%</span></label>
@@ -139,25 +147,62 @@
             </div>
          </section>
 
-         <form class="contact" id="contact" novalidate>
-            <fieldset>
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="user-name" aria-required="true">
-                <span aria-errormessage="full name required"></span>
-            </fieldset>
+         <section class="contact" id="contact">
+            <form id="form sheetdb-form" action="https://script.google.com/macros/s/AKfycbxVxL0iIgv8SPXQ-jqvUy2KRFTUs0L8HMPs4IiVyjT6JU86hjWpVWTPlUwvY1-f5pthlg/exec" method="post" novalidate>
+                <fieldset>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="FullName" aria-required="true">
+                    <span aria-errormessage="full name required"></span>
+                </fieldset>
+    
+                <fieldset>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="Email" aria-required="true">
+                    <span aria-errormessage="email required"></span>
+                </fieldset>
+    
+                <fieldset>
+                    <label for="user-message">Your Message</label>
+                    <textarea name="Message" id="user-message"></textarea>
+                </fieldset>
+                <button class="btn" type="submit">SEND MESSAGE</button>
+                </form>
+               <summary class="hide">
+                Message sent successfully!
+               </summary>
 
-            <fieldset>
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="user-email" aria-required="true">
-                <span aria-errormessage="email required"></span>
-            </fieldset>
+               <!-- Modal HTML -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modalMessage"></p>
+                    </div>
+                </div>
 
-            <fieldset>
-                <label for="user-message">Your Message</label>
-                <textarea name="user-message" id="user-message"></textarea>
-            </fieldset>
-            <button class="btn" type="submit">SEND MESSAGE</button>
-            </form>
+                <aside class="socials">
+                    <div class="slant-circle">
+                        <h3>Contact Me</h3>
+                    </div>
+                    <address>
+                        <a href="mailto:onyeama01@gmail.com"><i class="fa-regular fa-envelope fa-2x"></i> 
+                        <span>onyeama01@gmail.com</span></a>
+                    </address>
+
+                    <address>
+                        <a href="http://linkedin.com/in/nkechi-onyeama">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                            <span>Nkechi Onyeama</span>
+                        </a>
+                    </address>
+
+                    <address>
+                        <a href="http://Wa.me/+2349035506662">
+                            <i class="fa-brands fa-square-whatsapp fa-2x"></i>
+                            <span>Send a message on whatsapp</span>
+                        </a>
+                    </address>
+                </aside>
+         </section>
     </main>
 
     <footer>Copyright &copy; 2024 Nkechi Onyeama 
