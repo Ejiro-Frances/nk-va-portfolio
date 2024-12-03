@@ -40,7 +40,7 @@ body{
 /* Header First */
 header {
     background: #212529;
-    padding: 0.1rem 2rem;
+    padding: 0.6rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,6 +65,10 @@ header.active {
 .logo img {
    height: 40px;
    border-radius: 35%;
+}
+.logo span{
+    font-family: "Sevillana";
+    font-size: larger;
 }
 /* The hamburger Menu */
 #hamburger-menu {
@@ -122,6 +126,9 @@ header.active {
     width: 100%;
     transition: 0.3s ease-out;
 }
+.nav-links .cta a:hover::after {
+    width: 0;
+}
 
 /* The hero page */
 
@@ -144,27 +151,35 @@ main {
     padding: 1rem 1.5rem;
     border: 2px solid #9c36b5;
     color: #9c36b5;
-    font-size: 2rem;
+    font-size: 2.7rem;
     border-radius: 12px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 5px 5px 5px #9c36b5;;
 }
 .hero-text {
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     padding: 4rem 0;
 }
 .btn {
-    padding: .8rem 1.2rem;
+    padding: 1rem 1.5rem;
     border: 2px solid #fff;
     background: inherit;
     color: #fff;
     border-radius: 12px;
+    font-size: larger;
+    transition: all 0.3s ;
 }
 .btn:hover {
     background: #9c36b5;
     border: 2px solid transparent;
     box-shadow: 0 0 10px;
+   
+  
 } 
+.hero-btn:hover {
+    transform: translateY(-10px);
+    padding: 1rem 1.5rem;
+}
 
 /* services */
 .services {
@@ -279,6 +294,11 @@ label {
     height: 350px;
     width: 100%;
   }
+
+  .project-btn {
+    margin-top: 1.5rem;
+    background: #9c36b5;
+  }
 /* form */
 form {
     margin: 4rem 0;
@@ -308,7 +328,6 @@ textarea {
 .contact {
     display: flex;
     flex-direction: column-reverse;
-
 }
 .socials {
     padding: 1.5rem;
