@@ -360,9 +360,9 @@ textarea:hover{
 
 address a:hover {
     color: #020202;
-    transition: transform 0.3s ease-in-out;
-    
+    transition: transform 0.3s ease-in-out;  
 }
+
 
   /* CSS for the modal */
   .modal {
@@ -424,5 +424,19 @@ address a:hover {
   }
   footer a:hover {
     color: #f03e3e;
-
+  }
+  .foot-head a {
+    margin: 0 .5rem;
+  }
+  .foot-head{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.8rem ;
+  }
+  .foot-head .logo {
+    font-size: larger;
+    transform: translateY(-10px);
+  }
+  hr {
+   opacity: 0.5;
   }
